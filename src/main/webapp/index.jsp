@@ -58,11 +58,11 @@
             <div class="m-2">
                 <form class="m-2" action="LikePost" method="post">
                     <input hidden name="id" value="<%post.getId();%>">
-                    <button class="btn btn-danger">likes: 1</button>
+                    <button class="btn btn-danger">likes: <%post.getLikes();%></button>
                 </form>
                 <form class="m-2" action="DislikePost" method="post">
                     <input hidden name="id" value="<%post.getId();%>">
-                    <button class="btn btn-warning">dislikes: 1</button>
+                    <button class="btn btn-warning">dislikes: <%post.getDislikes();%></button>
                 </form>
             </div>
         </div>
@@ -99,11 +99,11 @@
                 <div>
                     <form class="m-2" action="LikeComment" method="post">
                         <input hidden name="id" value="<%comment.getId();%>">
-                        <button class="btn btn-danger">likes: 1</button>
+                        <button class="btn btn-danger">likes: <%comment.getLikes();%></button>
                     </form>
                     <form class="m-2" action="DislikeComment" method="post">
                         <input hidden name="id" value="<%comment.getId();%>">
-                        <button class="btn btn-warning">dislikes: 1</button>
+                        <button class="btn btn-warning">dislikes: <%comment.getDislikes();%></button>
                     </form>
                 </div>
             </div>
